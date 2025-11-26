@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>50% Discount Home — Gas Delivery Thika & Garissa Rd</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg class="brand-logo" viewBox="0 0 64 64">
+          <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 12 L40 28 L32 24 L24 28 Z" fill="currentColor"/>
+        </svg>
+        <div>
+          <div class="brand-name">50% Discount</div>
+          <div class="brand-tag">Fast • Safe • Affordable</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#order" class="btn-outline">Order</a>
+        <a href="#how" class="nav-link">How to Order</a>
+        <a href="#community" class="nav-link">Our Community</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Gas delivered to your door in <span class="accent">Jomoko – Thika & Garissa Rd</span></h1>
+        <p class="lead">
+          Enjoy 50% off your first order. We deliver safely and fast to homes and businesses 
+          around TIBS, Ananas Mall, and all along Garissa Road.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#order" class="btn-primary">Quick Order</a>
+          <a href="#how" class="btn-ghost">Learn How</a>
+        </div>
+
+        <ul class="benefits">
+          <li>Pin your exact location</li>
+          <li>Fast delivery from TIBS to Ananas Mall</li>
+          <li>24/7 support</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="card order-preview">
+          <div class="card-header">
+            <strong>Quick Order</strong>
+            <small>Estimated delivery: <span id="est-delivery">Today</span></small>
+          </div>
+
+          <form id="order" class="order-form">
+
+
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Jane Doe" required>
+            </label>
+
+            <label>
+              Delivery address
+              <input type="text" name="address" id="address" placeholder="Type address or pin below" required>
+            </label>
+
+            <!-- Pin Location -->
+            <div class="pin-location">
+              <button type="button" class="btn-pin" onclick="document.getElementById('map-frame').style.display='block';">
+                📍 Pin My Location
+              </button>
+            </div>
+
+            <iframe 
+              id="map-frame" 
+              class="map-frame" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63862.91839849884!2d37.0470!3d-1.0323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f0e6d902b5b%3A0x44415c961f5ce6a2!2sAnanas%20Mall%20Thika!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske" 
+              allowfullscreen 
+              loading="lazy">
+            </iframe>
+
+            <div class="form-row">
+              <label>
+                Cylinder size
+                <select name="size" required>
+                  <option value="6kg">6 kg</option>
+                  <option value="12.5kg" selected>12.5 kg (popular)</option>
+                  <option value="15kg">15 kg</option>
+                </select>
+              </label>
+
+              <label>
+                Quantity
+                <input type="number" name="qty" min="1" value="1" required>
+              </label>
+            </div>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="+254 7xx xxx xxx" required>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary full">Place order — 50% off</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="container how">
+      <h2>How it works</h2>
+      <div class="grid-3">
+        <div class="feature">
+          <div class="feature-icon">📱</div>
+          <h3>Order Online</h3>
+          <p>Enter your details, pin your location and confirm order.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🚛</div>
+          <h3>We Deliver</h3>
+          <p>Our riders deliver safely across <span class="accent">Garissa Road,</span> TIBS, Ananas Mall areas, Makongeni(Phase 4), Kisii, Kiganjo, Flame tree, Landless, Muguga.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💳</div>
+          <h3>Pay Easily</h3>
+          <p>Pay by M-Pesa, cash, or card upon delivery — your choice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section id="community" class="container community">
+      <h2>Join Our Local Community</h2>
+      <p class="community-text">
+        Connect with other customers around Jomoko and Thika, share delivery feedback, 
+        and get real-time promo updates.
+      </p>
+      <a href="https://chat.whatsapp.com/Cw1VfGfrsfEAq1D22v8ZXF" class="btn-community">💬 Join Our WhatsApp Group</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container contact">
+      <h2>Contact & Support</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Phone</strong><br> +254 734272801</p>
+          <p><strong>Email</strong><br> support@50% discount.co.ke</p>
+        </div>
+        <div>
+          <p><strong>Working hours</strong><br> 24 hrs (Mon–Sun)</p>
+          <p><strong>Service Area</strong><br> Jomoko • TIBS • Thika Ananas Mall • Garissa Road</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> 50% Discount — </small>
+      <div class="footer-links">
+        <a href="#how">How it works</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Support</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+ <script>
+const form = document.querySelector(".order-form");
+
+function showError(input, message) {
+    let err = input.parentNode.querySelector(".error");
+    if (!err) {
+        err = document.createElement("div");
+        err.className = "error";
+        err.style.color = "red";
+        err.style.fontSize = "13px";
+        err.style.marginTop = "3px";
+        input.parentNode.appendChild(err);
+    }
+    err.innerText = message;
+}
+
+function clearErrors() {
+    document.querySelectorAll(".error").forEach(e => e.remove());
+}
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    clearErrors();
+
+    let valid = true;
+
+    const full_name = form.name.value.trim();
+    const address = form.address.value.trim();
+    const size = form.size.value;
+    const qty = form.qty.value;
+    const phone = form.phone.value.trim();
+
+    // Validation
+    if (full_name.length < 3) {
+        showError(form.name, "Enter your full name");
+        valid = false;
+    }
+
+    if (address.length < 5) {
+        showError(form.address, "Enter a valid delivery address");
+        valid = false;
+    }
+
+    if (qty <= 0) {
+        showError(form.qty, "Quantity must be at least 1");
+        valid = false;
+    }
+
+    if (!phone.match(/^(\+?254|0)?7\d{8}$/)) {
+        showError(form.phone, "Enter a valid Kenyan phone number");
+        valid = false;
+    }
+
+    if (!valid) return;
+
+    // ================================
+    // CORRECT WHATSAPP FORMAT
+    // ================================
+    const whatsappNumber = "254734272801"; // MUST be numbers only
+
+    const msg = 
+        `NEW GAS ORDER\n` +
+        `-----------------------\n` +
+        `Name: ${full_name}\n` +
+        `Phone: ${phone}\n` +
+        `Address: ${address}\n` +
+        `Size: ${size}\n` +
+        `Quantity: ${qty}\n` +
+        `-----------------------\n` +
+        `Sent from website`;
+
+    const encodedMessage = encodeURIComponent(msg);
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Force WhatsApp to open
+    window.location.href = whatsappURL;
+
+
+
+    // ======================================
+    // SEND ORDER TO BACKEND API
+    // ======================================
+
+    const data = {
+        name: full_name,
+        address: address,
+        size: size,
+        qty: qty,
+        phone: phone
+    };
+
+    try {
+        const res = await fetch("/api/order", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (res.ok) {
+            console.log("Order saved in database.");
+        } else {
+            console.log("Failed to save order:", result.message);
+        }
+    } catch (err) {
+        console.log("Server error:", err);
+    }
+
+});
+</script>
+
+
+  </body>
+</html>
