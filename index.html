@@ -226,7 +226,7 @@ form.addEventListener("submit", async (e) => {
         valid = false;
     }
 
-    if (!phone.match(/^(\+?254|0)(7|1)\d{8}$/)) {
+    if (!phone.match(/^(\+?254|0)?7\d{8}$/)) {
         showError(form.phone, "Enter a valid Kenyan phone number");
         valid = false;
     }
